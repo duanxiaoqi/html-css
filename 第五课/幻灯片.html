@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body,ol,ul{margin:0;padding:0;}
+li{ list-style:none;}
+#pic{width:470px;height:150px; position:relative; margin:20px auto;overflow:hidden;}
+.pic_list{width:2350px; position:absolute;left:-470px;top:0;}
+.pic_list li{width:470px;height:150px;overflow:hidden;float:left;}
+.mask{height:30px;background:#000; opacity:0.6;width:470px;filter:alpha(opacity=60); position:absolute;bottom:0;left:0;}
+.btn_list{ position:absolute;right:0;bottom:2px;}
+.btn_list li{width:20px;height:20px;border:1px solid #F90; line-height:20px; text-align:center; font-size:12px; background:#FF0; color:#f90; margin:0 2px; float:left; display:inline;}
+.btn_list .active{ background:#f90;color:#FF0;padding:2px; border-color:#FF0; margin-top:-4px; position:relative;}
+</style>
+</head>
+<body>
+<div id="pic">
+	<ul class="pic_list">
+    	<li>
+        	<a href="#">
+            	<img src="images/1.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/2.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/3.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/4.jpg" alt="" />
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/5.jpg" alt="" />
+            </a>
+        </li>
+    </ul>
+    <div class="mask"></div>
+    <ol class="btn_list">
+    	<li>1</li>
+        <li class="active">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+</div>
+</body>
+</html>

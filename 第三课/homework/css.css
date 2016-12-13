@@ -1,0 +1,305 @@
+body,p,a,h5,h6,img,ul,li,dl,dt,dd
+{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #024dcd;
+    font-size: 11px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.box {
+    width: 608px;
+    border: 1px solid #e5e5e5;
+    margin: 10px auto;
+}
+
+.top{
+    width: 608px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.title {
+
+    width: 608px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #eaf9fe;
+
+}
+
+.title a {
+    display: block;
+    float: left;
+}
+
+.tit1 {
+    float: left;
+}
+
+.tit1 a{
+    padding: 0 14px;
+    font-size: 13px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tit1 .active {
+    background-color: #fff;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.tit2 {
+    float: left;
+    height: 11px;
+    line-height: 11px;
+    padding: 10px 0 9px 66px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tit2 a{
+    padding: 0 9px 0 8px;
+    font-size: 11px;
+    height: 11px;
+    line-height: 11px;
+    border-right: 1px solid #e5e5e5;
+    vertical-align: middle;
+}
+
+.tit2 .no_line{
+    border-right: none;
+    padding-right: 15px;
+}
+
+.top_con {
+    padding: 14px;
+    /*background-color: red;*/
+}
+
+.top_l {
+    float: left;
+    width: 580px;
+
+}
+
+.top_l .company1 {
+    display: block;
+    float: left;
+    width: 79px;
+    height: 18px;
+}
+
+.top_l .company2 {
+    display: block;
+    float: left;
+    width: 117px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.top_l .ad a {
+    padding-left: 6px;
+    padding-top: 4px;
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+
+.top_l .fist_ad {
+    padding-right: 60px;
+}
+
+.top_l .tv_l {
+    float: left;
+}
+
+.top_l .tv_left {
+    float: left;
+    width: 128px;
+
+}
+.top_l .tv_left .img {
+    width: 128px;
+    height: 80px;
+    position: relative;
+}
+
+.top_l .tv_left .tv1 {
+    position: absolute;
+    width: 128px;
+    height: 80px;
+    top:0;
+    left: 0;
+}
+.top_l .tv_left p {
+    position: absolute;
+    width: 116px;
+    padding: 3px 5px 4px 7px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.top_l .tv_left p span {
+    float: left;
+    color: #fff;
+}
+
+.top_l .tv_left p img  {
+    float: right;
+}
+
+.tv_left h6 {
+    line-height: 11px;
+    height: 11px;
+    padding-top: 7px;
+}
+
+.top_l .tv_right {
+    float: left;
+    padding-left: 22px;
+    line-height: 18px;
+}
+
+.tv2 {
+    padding-left: 44px;
+}
+
+.wrap_tv {
+    margin-top: 15px;
+}
+
+.bottom {
+    padding-top: 15px;
+    padding-left: 14px;
+    padding-bottom: 15px;
+}
+
+.bottom .list_box {
+    width: 128px;
+    height: 80px;
+    position: relative;
+}
+
+.bottom .list_box .img {
+    width: 124px;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom .list_box .border1 {
+    width: 123px;
+    height: 75px;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom .list_box .border2 {
+    width: 123px;
+    height: 75px;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+
+
+.bottom .list_box p {
+    position: absolute;
+    width: 120px;
+    padding: 4px 2px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    left: 0;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+}
+
+.bottom .list_box img {
+    float: right;
+}
+
+.bottom_tv h5{
+    font-size: 11px;
+    line-height: 11px;
+    padding: 9px 0;
+}
+
+.bottom_tv h6 a{
+    color: #919191;
+}
+
+.bottom_tv {
+    float: left;
+    padding-right: 22px;
+    padding-bottom: 14px;
+}
+
+.last_tv {
+    padding-right: 0;
+}
+
+.bottom dt a{
+    color: #909090;
+}
+
+.bottom dt {
+    float: left;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.bottom dd{
+    float: left;
+}
+
+.bottom dd a{
+    display: block;
+    padding: 0 6px 0 8px;
+    border-left: 1px solid #909090;
+}
+
+.bottom .land {
+    padding-left: 0;
+    border-left: none;
+}
+
+.bottom dl {
+    float: left;
+    padding: 5px 0;
+
+}
+
+.bottom .city {
+    padding-right: 25px;
+}
+
+

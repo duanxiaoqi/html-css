@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .wrap {
+            width: 958px;
+            margin: 22px auto;
+        }
+
+        .logo {
+            width: 117px;
+            height: 35px;
+            padding-right: 22px;
+            border-right: 1px dotted #76787a;
+            float: left;
+        }
+
+        .top h3 {
+            float: left;
+            font-size: 24px;
+            line-height: 35px;
+            color: #76787a;
+            padding-left: 18px;
+        }
+
+        .top span {
+            float: right;
+            display: block;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        .wrap span a {
+            font-size: 14px;
+            line-height: 14px;
+            color: #1d50a2;
+            vertical-align: bottom;
+        }
+
+        .title {
+            margin-top: 20px;
+            width: 888px;
+            padding-left: 60px;
+            padding-right: 10px;
+            height: 44px;
+            line-height: 44px;
+            background: url("./images/talk.png") 14px 10px no-repeat,url("./images/bule.png") 0 0 no-repeat,url("./images/bule.png") right -100px no-repeat,url("./images/bule.png") 3px -50px repeat-x;
+        }
+
+        .title h4 {
+            color: #fff;
+            font-size: 14px;
+            line-height: 44px;
+            float: left;
+        }
+
+        .title a {
+            color: #fff;
+            font-size: 14px;
+            line-height: 44px;
+            float: right;
+        }
+
+        .content {
+            width: 958px;
+            height: 540px;
+            background: url("./images/bg.png") -1000px bottom no-repeat, url("./images/bg.png") 0 0 repeat-y;
+        }
+
+        .box {
+            width: 470px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .box span {
+            display: block;
+            float: left;
+            width: 72px;
+            text-align: right;
+            font-size: 14px;
+            line-height: 27px;
+        }
+
+        .box span strong {
+            color: #ff3b3b;
+            height: 27px;
+            line-height: 27px;
+            padding-right: 6px;
+            vertical-align: sub;
+        }
+
+        .box input {
+            display: inline-block;
+            width: 308px;
+            height: 25px;
+            border: 1px solid #c1c1c1;
+            margin-left: 12px;
+            background: url("./images/text.png") 0 0 repeat-x;
+            font-size: 14px;
+            color: #999999;
+            padding-left: 4px;
+        }
+
+        .box p {
+            display: block;
+            font-size: 13px;
+            color: #999999;
+            padding-left: 84px;
+            line-height: 30px;
+            padding-bottom: 10px;
+            letter-spacing: 0;
+            word-spacing: 0;
+            font-weight: normal;
+        }
+
+        .box .address {
+            width: 196px;
+
+        }
+
+        .box .email {
+            width: 84px;
+            height: 19px;
+            border: 1px solid #abadb3;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            padding-right: 17px;
+            padding-left: 5px;
+            background: url("./images/select.png") right 0 no-repeat;
+            border-radius: 0;
+        }
+
+        .test_box {
+            display: inline-block;
+            height: 52px;
+            line-height: 52px;
+            float: left;
+        }
+
+        .box .test {
+            width: 182px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+
+        .box .er {
+            width: 120px;
+            height: 50px;
+            border: 1px solid #e7e7e7;
+            float: left;
+            margin-left: 4px;
+        }
+
+        .box .er img {
+            display: block;
+            width: 120px;
+            height: 50px;
+        }
+
+        .box .test_p {
+            float: left;
+        }
+
+        .pic_a {
+            font-size: 13px;
+            line-height: 30px;
+            padding-left: 5px;
+            float: left;
+        }
+
+        .box .checkbox {
+            display: block;
+            margin-left: 84px;
+            width: 13px;
+            height: 13px;
+            line-height: 13px;
+            float: left;
+        }
+
+        .box .ture em {
+            font-style: normal;
+            color: #1d50a2;
+        }
+
+        .box .ture {
+            font-size: 13px;
+            line-height: 13px;
+            float: left;
+            padding-left: 8px;
+        }
+
+        .box .now {
+            width: 104px;
+            height: 37px;
+            background: url("./images/now.png") 0 0 no-repeat, url("./images/now.png") right -80px no-repeat, url("./images/now.png") 4px -40px repeat-x;
+            margin-top: 40px;
+            margin-left: 84px;
+            text-align: center;
+            line-height: 37px;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 12px;
+            color: #666666;
+
+        }
+
+        .bottom {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .bottom a {
+            display: block;
+            padding-left: 4px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #666666;
+        }
+
+        .bottom .wangyi {
+            padding-left: 9px;
+            border-left: 1px solid #666666;
+        }
+
+        .bottom .li {
+            padding-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="top clearfix">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <h3>中国第一大电子邮件服务商</h3>
+            <span>
+                <a href="#">反馈意见</a>
+                <a href="#">帮助</a>
+            </span>
+        </div>
+        <div class="title clearfix">
+            <h4>欢迎注册网易免费邮!您可以选择注册163、126、yeah.net三大免费邮箱。</h4>
+            <a href="#">了解详情>></a>
+        </div>
+        <div class="content">
+            <div class="box clearfix">
+                <span><strong>*</strong>邮箱地址</span>
+                <input type="text" value="建议输入手机号码注册" class="address">@
+                <select name="" class="email">
+                    <option value="126">126.com</option>
+                    <option value="163">163.com</option>
+                    <option value="yeah">yeah.net</option>
+                </select>
+                <p>6-18个字符,可使用字母、数字、下划线。推荐以手机号码直接注册</p>
+                <span><strong>*</strong>密码</span>
+                <input type="text">
+                <p>6-18个字符,区分大小写</p>
+                <span><strong>*</strong>确认密码</span>
+                <input type="text">
+                <p>请再次输入密码</p>
+                <span><strong>*</strong>手机号码</span>
+                <input type="text">
+                <p>密码遗忘或被盗时,可通过手机短信取回密码</p>
+                <span><strong>*</strong>验证码</span>
+                <div class="clearfix">
+                    <div class="test_box">
+                        <input type="text" class="test">
+                    </div>
+                    <a href="#" class="er"><img src="./images/er.png" alt=""></a>
+                    <p class="test_p">请输入图片中的字符,不区分大小写</p>
+                    <a href="#" class="pic_a">看不清楚?换张图片</a>
+
+                </div>
+                <input type="checkbox" class="checkbox">
+                <strong class="ture">同意"<em>服务条款</em>"和"<em>隐私权保护和个人信息利用政策</em>"</strong>
+
+
+
+                <div class="now">立即注册</div>
+            </div>
+        </div>
+        <ul class="bottom">
+            <li><a href="#">关于网易</a></li>
+            <li><a href="#">关于网易免费邮</a></li>
+            <li><a href="#">邮箱官网博客</a></li>
+            <li><a href="#">客户服务</a></li>
+            <li class="li"><a href="#">隐私政策</a></li>
+            <li class="wangyi">网易公司版权所有</li>
+            <li>&copy;</li>
+            <li>1997-2012</li>
+        </ul>
+    </div>
+</body>
+</html>

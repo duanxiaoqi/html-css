@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body,ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dd,form,input,textarea,select,td,th { padding:0; margin:0; }
+li { list-style:none; }
+img { border:none; }
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+</style>
+</head>
+
+<body>
+<form action="#">
+<table>
+	<tr>
+    	<th>姓名：</th>
+        <td><input onfocus="this.value=''; this.style.color='#333';" type="text" style="color:#999;" value="请输入大名" /></td>
+    </tr>
+	<tr>
+    	<th>密码：</th>
+        <td><input type="password" /></td>
+    </tr>
+	<tr>
+    	<th>性别：</th>
+        <td>
+        	<label><input type="radio" name="a1" checked="checked" /> 男</label>
+        	<input id="aaa1" type="radio" name="a1" /> <label for="aaa1">女</label>
+        	<label><input type="radio" name="a2" />a</label>
+        	<label><input type="radio" name="a2" />b</label>
+        </td>
+    </tr>
+    <tr>
+    	<th>性取向：</th>
+    	<td>
+        	<input type="checkbox" />Lesbian
+        	<input type="checkbox" />gay
+        	<input type="checkbox" />双性恋
+        	<input type="checkbox" />腐女
+        </td>
+    </tr>
+    <tr>
+    	<th>上传照片：</th>
+    	<td>
+        	<input type="file" />
+        </td>
+    </tr>
+    <tr>
+    	<th>生日：</th>
+    	<td>
+        	<select>
+            	<option value="90">1990</option>
+            	<option value="91">1991</option>
+            	<option value="92">1992</option>
+            </select>
+            年
+        	<select>
+            	<option value="10">10</option>
+            	<option value="11">11</option>
+            	<option value="12">12</option>
+            </select>
+            月
+        </td>
+    </tr>
+    <tr>
+    	<th>留言：</th>
+    	<td>
+        	<textarea></textarea>
+        </td>
+    </tr>
+    <tr>
+    	<th>提交：</th>
+    	<td>
+        	<input type="submit" value="提交" />
+            <input type="reset" value="重新填写" />
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

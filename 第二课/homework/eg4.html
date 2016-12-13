@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .top {
+            width: 950px;
+            background-color: #e3e3e3;
+        }
+        h3, p,ul,li,dl,dt,dd {
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h3{
+            width: 280px;
+            height: 36px;
+            padding-left: 18px;
+            background-color: #000;
+            font: 20px/35px '黑体';
+            color: #fffeff;
+            float: left;
+            position: relative;
+        }
+
+
+        .top h3 em {
+            width: 0;
+            height: 0;
+            border: 18px solid #e3e3e3;
+            border-bottom: 18px solid #000;
+            border-left: 18px solid #000;
+            position: absolute;
+            right: -36px;
+            top:0;
+
+
+        }
+
+        .top ul {
+
+            float: left;
+            padding-left: 73px;
+            padding-top: 18px;
+        }
+
+        .top li{
+            float: left;
+            padding-left: 8px;
+            padding-right: 10px;
+            border-right: 1px solid #000;
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+        .top .no_border {
+            border-right: none;
+        }
+
+        .ad {
+            float: left;
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+
+        .news1 {
+            float: left;
+            width: 330px;
+            border-right: 2px solid #efefef;
+        }
+
+        .pic {
+            position: relative;
+        }
+        img {
+            display: block;
+        }
+
+        .pic p{
+            width: 314px;
+            padding: 3px 0 3px 16px;
+            background-color: #000;
+            opacity: 0.7;
+            color: #fff;
+            font: 16px/22px "黑体";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .title {
+            margin-top: 17px;
+        }
+
+        .title li {
+            float: left;
+            padding: 7px 9px;
+            font: 14px/23px "黑体";
+            font-weight: bold;
+            border-right: 1px solid #2b2b2b;
+        }
+
+        .face {
+            background-color: #e9e9e9;
+            color: #cc0000;
+        }
+
+        .no_line {
+            border-right: none;
+        }
+
+        .l_con {
+            padding-left: 16px;
+            margin-top: 16px;
+
+        }
+
+
+        .l_top img {
+            float: left;
+            display: block;
+            border: 1px solid #aeaeae;
+            padding: 1px;
+
+            width: 95px;
+        }
+
+        .l_top dl {
+            width: 190px;
+            float: left;
+            padding-left: 19px;
+            padding-top: 9px;
+        }
+
+        .l_top dt {
+            font: 12px/22px "黑体";
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .l_top dd {
+            font: 12px/20px "黑体";
+            color: #666666;
+        }
+
+        .l_top span {
+            color: #333;
+        }
+
+        .l_con ul{
+            margin-top: 12px;
+        }
+
+        .l_con li {
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        .news2 {
+            float: left;
+            width: 390px;
+
+        }
+
+        .news2 li {
+            float: left;
+            padding: 26px 10px 10px 20px;
+            width: 100px;
+
+        }
+
+
+
+        .news2 img {
+            display: block;
+            border: 1px solid #aeaeae;
+            padding: 1px;
+        }
+
+
+        .news2 p {
+            font-size: 12px;
+            line-height: 18px;
+            color: #333;
+            margin-top: 9px;
+        }
+
+        .news2 span{
+            font-size: 12px;
+            line-height: 22px;
+            color: #999999;
+        }
+
+        .news2 em {
+            font-style: normal;
+            color: #333;
+        }
+
+        .news3 {
+            float: right;
+            border-left: 4px solid #efefef;
+        }
+
+        .news3 img {
+            display: block;
+        }
+
+        .middle{
+            width: 950px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="top clearfix">
+            <h3>
+                <span>搜狐视频娱乐播报</span>
+                <em></em>
+            </h3>
+
+            <ul>
+                <li><a>独家视频</a></li>
+                <li><a>热播排行榜</a></li>
+                <li class="no_border"><a>最新综艺</a></li>
+            </ul>
+            <a class="ad"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="middle clearfix">
+            <div class="news1">
+                <div class="pic">
+                    <img src="images/news.png" alt="">
+                    <p>网曝姚晨已与曹郁领证<br>当事人澄清假新闻</p>
+                </div>
+                <ul class="title clearfix">
+                    <li>大鹏嘚吧嘚</li>
+                    <li class="face">NewFace</li>
+                    <li class="no_line">先锋人物</li>
+                </ul>
+                <div class="l_con clearfix">
+                    <div class="l_top clearfix">
+                        <img src="images/news1.png" alt="">
+                        <dl>
+                            <dt><a>大鹏嘚吧嘚427期:厨卫展偶遇卖身厨娘</a></dt>
+                            <dd><a>大鹏嘚吧嘚427期:厨卫展偶遇卖身厨娘<span>[详情]</span></a></dd>
+                        </dl>
+                    </div>
+                    <ul>
+                        <li><a href="#">TOP1:&nbsp;朱军父子合照被爆&nbsp;能歌善舞似小姨谭晶</a></li>
+                        <li><a href="#">TOP2:&nbsp;朱军父子合照被爆&nbsp;能歌善舞似小姨谭晶</a></li>
+                        <li><a href="#">TOP3:&nbsp;朱军父子合照被爆&nbsp;能歌善舞似小姨谭晶</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="news2 clearfix">
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+                <li>
+                    <img src="images/news2.png" alt="">
+                    <p><a>孔令辉马苏浪漫事范冰冰回应绯闻</a></p>
+                    <span>来源:&nbsp;<em>非常静距离</em></span>
+                    <span>日期:&nbsp;2016-06-05</span>
+                </li>
+            </ul>
+            <div class="news3">
+                <img src="images/ad.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 366px;
+            border: 1px solid pink;
+        }
+
+        .title {
+            background:url("./images/dot2.png") 6px 4px no-repeat, url("./images/bg2.png") 0 0 no-repeat;
+            padding-left: 30px;
+        }
+
+        .title h4 {
+            font-size: 11px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #294852;
+        }
+
+        .content {
+            padding-top: 14px;
+            background-color: #f4fafb;
+        }
+
+        .content li {
+            padding-left: 5px;
+            padding-bottom: 22px;
+        }
+
+        .content .img {
+            float: left;
+            width: 95px;
+            height: 60px;
+            display: block;
+            padding: 2px;
+            border: 1px solid #c8c4d3;
+        }
+
+        .content dl {
+            padding-left: 13px;
+            float: left;
+            width: 240px;
+            font-size: 11px;
+        }
+
+        .content dt a{
+            line-height: 22px;
+            font-weight: bold;
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .content dd,
+        .content dd a{
+            line-height: 20px;
+            color: #666666;
+        }
+
+        .content dd a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <h4>外媒评论精选</h4>
+        </div>
+        <ul class="content">
+            <li class="clearfix">
+                <a href="#" class="img"><img src="./images/movie.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">《加勒比海盗4》————商业味浓郁</a></dt>
+                    <dd>本集《加勒比海盗》讲述了杰克船长受英王所托寻找"不老泉",与他……<a href="#">[详细]</a></dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="img"><img src="./images/movie.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">《加勒比海盗4》————商业味浓郁</a></dt>
+                    <dd>本集《加勒比海盗》讲述了杰克船长受英王所托寻找"不老泉",与他……<a href="#">[详细]</a></dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                <a href="#" class="img"><img src="./images/movie.png" alt=""></a>
+                <dl>
+                    <dt><a href="#">《加勒比海盗4》————商业味浓郁</a></dt>
+                    <dd>本集《加勒比海盗》讲述了杰克船长受英王所托寻找"不老泉",与他……<a href="#">[详细]</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

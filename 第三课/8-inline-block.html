@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body{font-size:12px; font-family:"宋体";}
+div,span{height:100px;background:red; color:#fff; display:inline-block;}
+/*
+	块
+	1.独占一行
+	2.支持所有样式
+	3.不设置宽的时候宽度撑满整行
+	内嵌
+	1.可并列在一行
+	2.不支持宽高，对上下的margin和padding支持的也有问题
+	3.代码换行会产生一个空格 (通过设置 字体和文字大小 来控制空格大小)
+	4.宽度有内容来撑开
+	
+	inline-block
+	1.能使内嵌元素支持宽高
+	2.能使块元素并在一行
+	3.代码换行会产生一个空格
+	4.不设置宽的时候宽度由内容撑开
+
+	问题:2."能使块元素并在一行"在IE6,7下不支持块标签
+*/
+</style>
+</head>
+<body>
+<div class="div1">块</div>
+<div>块</div>
+<span class="div2">内嵌</span>
+<span>内嵌</span>
+</body>
+</html>

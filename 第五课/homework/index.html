@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li,p,h3,dl,dt,dd {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .clearfix:after {
+            content: '';
+            height: 0;
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .classBox {
+            margin: 10px auto;
+            width: 1000px;
+
+        }
+
+        .first{
+            border-left: 1px solid #dddddd;
+        }
+
+        .classList {
+            width: 140px;
+            padding: 7px 10px;
+
+            border-bottom: 1px solid #dddddd;
+            border-right: 1px solid #dddddd;
+            border-top: 3px solid #7ec0d8;
+            float: left;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            color: #4499be;
+
+        }
+
+        .imgBox {
+            width: 136px;
+            height: 96px;
+            padding: 1px;
+            border: 1px solid #dddddd;
+            position: relative;
+            display: block;
+        }
+
+        .tv {
+            padding-bottom: 5px;
+        }
+
+        .title {
+            position: absolute;
+            height: 20px;
+            line-height: 20px;
+            font-size: 11px;
+            padding-right: 6px;
+            right: 1px;
+            bottom: 1px;
+            background-color: rgba(0,0,0,.5);
+            color: #fff;
+
+        }
+
+        .tvName {
+            float: left;
+        }
+
+        .tvName a,
+        .movieName a{
+            font-size: 13px;
+            line-height: 20px;
+            color: #3c3c3c;
+        }
+
+        .tv .tvName span,
+        .movieName,
+        dd{
+            font-size: 11px;
+            line-height: 20px;
+            color: #b9b9b9;
+        }
+
+
+
+        .file {
+            float: right;
+            display: block;
+            height: 20px;
+            line-height: 15px;
+        }
+
+        .tvList {
+            border-bottom: 1px dashed #dcdcdc;
+            padding-bottom: 4px;
+            padding-top: 14px;
+        }
+
+        .movieList {
+            padding-top: 14px;
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="classBox clearfix">
+        <li class="classList first">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+        <li class="classList">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+        <li class="classList">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+        <li class="classList">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+        <li class="classList">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+        <li class="classList">
+            <h3>TVB剧场</h3>
+            <ul class="tvList">
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+                <li class="tv">
+                    <a class="imgBox">
+                        <img src="./img/tv.png" alt="">
+                        <p class="title">天变女人力挽狂澜</p>
+                    </a>
+                    <div class="clearfix tvBox">
+                        <p class="tvName">
+                            <a href="#" class="tvName">万凰之王</a>
+                            <span>(至29集)</span>
+                        </p>
+                        <a href="#" class="file"><img src="./img/file.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <dl class="movieList">
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+                <dt class="movieName"><a href="#">赌场风云</a>(35集全)</dt>
+                <dd>欧阳震华赌王养成记</dd>
+            </dl>
+
+        </li>
+    </ul>
+</body>
+</html>

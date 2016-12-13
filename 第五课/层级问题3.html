@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+.box{width:200px;height:200px;border:1px solid #ff0000; position:relative;z-index:1;}
+.box a{ position:absolute;width:100px;height:100px;background:#ff0000; font-size:14px;color:#fff; text-decoration:none;}
+.a1{left:10px;top:10px;}
+.a2{top:10px;right:11px;}
+.a3{top:50%;left:50%;margin-left:-50px;margin-top:-50px;}
+.a4{ left:10px;bottom:11px;}
+.a5{right:11px;bottom:11px;}
+.box a:hover{background:blue;z-index:2; }
+
+/*
+a:hover 设置层级 在IE6，7下 会有问题
+*/
+</style>
+</head>
+<body>
+<div class="box">
+	<a href="#" class="a1">a1</a>
+    <a href="#" class="a2">a2</a>
+    <a href="#" class="a3">a3</a>
+    <a href="#" class="a4">a4</a>
+    <a href="#" class="a5">a5</a>
+</div>
+</body>
+</html>

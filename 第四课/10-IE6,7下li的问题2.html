@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body,ul{margin:0;padding:0;}
+li{ list-style:none;}
+ul{width:200px;}
+li{height:30px;border:1px solid #000; vertical-align:top;}
+a{float:left;}
+span{float:right;}
+
+/*元素浮动要并在一行的几个元素都要加浮动*/
+
+/*
+	IE6,7下li的bug
+	
+	li的内容浮动了，但li本身没浮动 在IE6,7下li下边会多出几个px的距离
+	
+	解决方法:
+	1.给li加浮动
+*/
+</style>
+</head>
+<body>
+<ul>
+	<li><a href="#">左侧</a><span>右侧</span></li>
+    <li><a href="#">左侧</a><span>右侧</span></li>
+    <li><a href="#">左侧</a><span>右侧</span></li>
+    <li><a href="#">左侧</a><span>右侧</span></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h4,ul,li,p,dl,dt,dd{
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        h4{
+            width: 725px;
+            font-size: 12px;
+            line-height: 24px;
+            padding-left: 6px;
+            border-top: 3px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+            color: #0463b3;
+        }
+
+        ul {
+            padding-top: 15px;
+        }
+
+        li{
+            list-style: none;
+            float: left;
+            padding-left: 45px;
+        }
+
+        .first {
+            padding-left: 25px;
+        }
+
+        img{
+            display: block;
+            border: 1px solid #d6d3dc;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #4c4c4c;
+        }
+
+        dl {
+            width: 730px;
+            border-bottom: 1px dotted #adadad;
+            background-color: #eff3f2;
+
+        }
+
+        .basic {
+            margin-top: 5px;
+        }
+
+        dt,
+        dd{
+
+            float: left;
+            line-height: 16px;
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        dt {
+            color: #000;
+            padding-left: 10px;
+            width: 120px;
+            background-color: #eaeeed;
+        }
+
+        dd {
+            color: #323433;
+            padding-left: 15px;
+            width: 80px;
+            background-color: #eff3f2;
+
+        }
+
+        span {
+            display: block;
+        }
+
+        dd span {
+            border-right: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <h4>全球通业务&nbsp;+</h4>
+    <ul class="clearfix">
+        <li class="first">
+            <img src="images/2.png" alt="">
+            <p>信息管家</p>
+        </li>
+        <li><img src="images/3.png" alt="">
+            <p>无线音乐专区</p>
+        </li>
+        <li><img src="images/4.png" alt="">
+            <p>手机证券</p>
+        </li>
+        <li><img src="images/5.png" alt="">
+            <p>飞信</p>
+        </li>
+        <li><img src="images/6.png" alt="">
+            <p>短信回执</p>
+        </li>
+    </ul>
+    <dl class="clearfix basic">
+        <dt><span>-基本业务</span></dt>
+        <dd><span>国际漫游</span></dd>
+        <dd><span>国际长途</span></dd>
+        <dd><span>国内长途</span></dd>
+        <dd><span>国内漫游</span></dd>
+        <dd><span>本地通话</span></dd>
+        <dd><span>更多</span></dd>
+    </dl>
+    <dl class="clearfix">
+        <dt><span>-新业务</span></dt>
+        <dd><span>手机阅读</span></dd>
+        <dd><span>手机支付</span></dd>
+        <dd><span>139邮箱</span></dd>
+        <dd><span>MO手机上网</span></dd>
+        <dd><span>视频会议</span></dd>
+        <dd><span>更多</span></dd>
+    </dl>
+</body>
+</html>

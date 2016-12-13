@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+
+.div1{width:200px;height:200px;background:Red; position:relative;z-index:1;}
+.div2{width:150px;height:150px;background:blue; position:absolute;z-index:2; top:50px;}
+.div3{width:100px;height:100px;background:yellow; position:absolute;z-index:3;}
+/*
+a:hover 设置层级 在IE6，7下 会有问题
+
+z-index  只能在兄弟标签之间作比较
+*/
+</style>
+</head>
+<body>
+<div class="div1">
+	<div class="div3"></div>
+</div>
+<div class="div2"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+浮动的原理:
+	使元素脱离文档流，然后按照指定的方向去移动，碰到父级的边界或者另外一个浮动元素停止
+	浮动
+	1.使内嵌元素支持宽高
+	2.使块元素并在一行
+	3.不设置宽度的时候宽度由内容撑开
+	4.脱离文档流
+	
+	clear clear:left 只能对上一个元素起作用
+	clear 元素的某个方向不能有浮动元素 left\right\both 
+————————————————
+
+浮动元素的父级有宽度的时候 IE6,7下是不用清浮动的
+	
+	清除浮动
+	1.给浮动元素的父级也加浮动
+	2.给浮动元素父级加display：inline-block
+	3.在浮动元素下边加<div class="clearFloat"></div>
+	.clearFloat{height:0;clear:both;font-size:0;}
+	4.在浮动元素下边加<br clear="all"/>
+	5.给浮动元素的父级加class="clear"
+	.clear{zoom:1;}
+	.clear:after{content:"";display:block;clear:both;}
+	
+	6.给浮动元素的父级加overflow
+
+	结构，样式，行为三者分离
+————————————————
+
+IE6最小高度
+    在IE6下任何高度小于19px的元素高度都会被当做19px来处理 
+    解决方法：font-size:0；
+————————————————
+
+overflow 溢出
+		hidden 隐藏
+		auto 滚动条
+————————————————
+
+IE6下双边距BUG：	
+浮动，横向的margin，块元素
+解决方法：display：inline
+————————————————
+
+元素浮动要并在一行的几个元素都要加浮动
+IE6,7下li的bug
+li的内容浮动了，但li本身没浮动 在IE6,7下li下边会多出几个px的距离
+解决方法:
+1.给li加浮动
+

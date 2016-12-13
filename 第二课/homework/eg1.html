@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*图片定位(不容易拓展),文字浮动*/
+        ul,
+        li,
+        span{
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 140px;
+            padding: 0 3px;
+            border: 1px solid #a7a7a7;
+            background-color: #f4f4f4;
+        }
+
+        ul {
+            padding: 5px 0 3px 0;
+            border-bottom: 1px solid #a6a6a6;
+        }
+
+        .no_line {
+            border-bottom: none;
+        }
+
+        li {
+            padding-left: 16px;
+            font-size: 12px;
+            line-height: 18px;
+            vertical-align: middle;
+            position: relative;
+
+        }
+
+        em {
+            text-decoration: underline;
+            font-style: normal;
+
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 4px solid #010101;
+            border-top: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            border-right: 4px solid #fff;
+            font-size: 0;
+            position: absolute;
+            right: 5px;
+            top: 4px;
+        }
+
+        .dot {
+            display: block;
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            left: 4px;
+        }
+
+        .true {
+            display: block;
+            width: 9px;
+            height: 8px;
+            background: url("images/1.png") no-repeat;
+            position: absolute;
+            left: 3px;
+            top: 6px;
+        }
+
+        .active,
+        li:hover {
+            background-color: #3399fe;
+            color: #fffeff;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                工具栏(<em>T</em>)
+                <span class="arrow"></span>
+            </li>
+            <li>
+                <span class="true"></span>
+                状态栏(<em>B</em>)
+            </li>
+            <li>
+                浏览器栏(<em>E</em>)
+                <span class="arrow"></span>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="dot">•</span>
+                缩略图(<em>H</em>)
+            </li>
+            <li>
+                <span>平铺(<em>S</em>)</span>
+            </li>
+            <li class="active"><span>图标(<em>N</em>)</span></li>
+            <li><span>列表(<em>L</em>)</span></li>
+            <li><span>详细信息(<em>D</em>)</span></li>
+        </ul>
+        <ul>
+            <li>
+                <span>排列图标(<em>H</em>)</span>
+                <span class="arrow"></span>
+            </li>
+        </ul>
+        <ul>
+            <li><span>选择详细信息(<em>C</em>)...</span></li>
+            <li><span>自定义文件夹(<em>F</em>)...</span></li>
+        </ul>
+        <ul class="no_line">
+            <li>
+                <span>转到(<em>O</em>)...</span>
+                <span class="arrow"></span>
+            </li>
+            <li><span>刷新(<em>R</em>)...</span></li>
+        </ul>
+    </div>
+</body>
+</html>

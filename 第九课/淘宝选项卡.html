@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body,ul{margin:0;padding:0;}
+li{ list-style:none;}
+#box{width:298px;border:1px solid #d5d5d5;margin:30px auto;}
+.head{height:25px;background:url(img/head_bg.png) repeat-x;padding-top:4px;padding-left:7px;}
+.head li{float:left;padding:1px 14px 0;font-size:12px;line-height:20px;height:24px; white-space:nowrap;}
+.head a{color:#3e3e3e; text-decoration:none;}
+.head .active{border:1px solid #d5d5d5;border-bottom:none;padding-top:0;background:#fff; font-weight:bold;margin:0 -1px; }
+.content div{ display:none;}
+.content .show{ display:block;height:60px;}
+</style>
+<script>
+window.onload=function()
+{
+	var oBox=document.getElementById("box");
+	var aLi=oBox.getElementsByTagName("li");
+	var aDiv=oBox.getElementsByTagName("div")[0].getElementsByTagName("div");
+	
+	for(var i=0;i<aLi.length;i++)
+	{
+		aLi[i].index=i;
+		aLi[i].onmouseover=function()
+		{
+			for(var i=0;i<aLi.length;i++)
+			{
+				aLi[i].className="";
+				aDiv[i].className="";
+			}
+			this.className="active";
+			aDiv[this.index].className="show";
+		};
+	}
+};
+</script>
+</head>
+<body>
+<div id="box">
+	<ul class="head">
+    	<li>
+        	<a href="#">公告</a>
+        </li>
+        <li class="active">
+        	<a href="#">规则</a>
+        </li>
+        <li>
+        	<a href="#">论坛</a>
+        </li>
+        <li>
+        	<a href="#">安全中心</a>
+        </li>
+        <li>
+        	<a href="#">公益</a>
+        </li>
+    </ul>
+    <div class="content">
+    	<div >内容一</div>
+        <div class="show">内容二</div>
+        <div>内容三</div>
+        <div>内容四</div>
+        <div>内容五</div>
+    </div>
+</div>
+</body>
+</html>

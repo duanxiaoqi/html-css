@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+.box{width:100px;height:100px;background:Red;float:left;}
+.div{width:150px;height:150px;background:blue; clear:left;}
+/*
+	浮动的原理:
+	使元素脱离文档流，然后按照指定的方向去移动，碰到父级的边界或者另外一个浮动元素停止
+	浮动
+	1.使内嵌元素支持宽高
+	2.使块元素并在一行
+	3.不设置宽度的时候宽度由内容撑开
+	4.脱离文档流
+	
+	clear clear:left 只能对上一个元素起作用
+	clear 元素的某个方向不能有浮动元素 left\right\both
+*/
+</style>
+</head>
+<body>
+<div class="box">box</div>
+<div class="div">div</div>
+</body>
+</html>

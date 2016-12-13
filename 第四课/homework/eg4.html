@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 11px;
+            color: #333333;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 378px;
+            border: 1px solid pink;
+            background-color: #f4fafb;
+        }
+
+        .title {
+            background:url("./images/dot2.png") 6px 4px no-repeat, url("./images/bg2.png") 0 0 repeat-x;
+            padding-left: 30px;
+        }
+
+        .title h4 {
+            font-size: 11px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #294852;
+        }
+
+        .list {
+            padding: 16px 10px 6px 8px;
+
+        }
+
+        .list li {
+            padding-right: 18px;
+            float: left;
+        }
+
+        .list .last {
+            padding-right: 0;
+        }
+
+
+
+        .img img{
+            display: block;
+            width: 85px;
+            height: 102px;
+            padding: 2px;
+            border: 1px solid #c8c4d3;
+        }
+
+        .img {
+            display: block;
+            width: 91px;
+            padding-right: 16px;
+            background: url("./images/movie_bg.png") 91px 17px no-repeat;
+        }
+
+        .list p{
+            text-align: center;
+            width: 91px;
+            padding-top: 8px;
+        }
+
+        .comment {
+            padding-bottom: 12px;
+        }
+
+        .comment li {
+            padding-left: 40px;
+            background: url("./images/dot5.png") 27px 9px no-repeat;
+        }
+
+        .comment li a {
+            line-height: 22px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="title">
+        <h4>华语谍报</h4>
+    </div>
+    <ul class="list clearfix">
+        <li>
+           <a href="#" class="img"><img src="./images/movie2.png" alt=""></a>
+           <p><a href="#">大叔</a></p>
+       </li>
+        <li>
+            <a href="#" class="img"><img src="./images/movie2.png" alt=""></a>
+            <p><a href="#">大叔</a></p>
+        </li>
+        <li class="last">
+            <a href="#" class="img"><img src="./images/movie2.png" alt=""></a>
+            <p><a href="#">大叔</a></p>
+        </li>
+    </ul>
+    <ul class="comment">
+        <li><a href="#">化妆,还是伪装?港三区美亚版《最强喜事》</a></li>
+        <li><a href="#">化妆,还是伪装?港三区美亚版《最强喜事》</a></li>
+        <li><a href="#">化妆,还是伪装?港三区美亚版《最强喜事》</a></li>
+    </ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+语言--与浏览器沟通
+
+HTML — Hypertext Markup Language 超文本标记语言，是用于描述网页文档的一种标记语言。是和浏览器打交道的语言。
+	
+1.介绍：HTML是通过标记符号来标记要显示的网页中的各个部分的文本，告诉浏览器如何显示。之所以称为超文本标记语言，是因为文本中包含了所谓的“超级链接”。
+
+文本--HTML   
+超--链接   
+标记--< /> 
+      <></>
+
+2.结构：
+页面声明	<!doctype html>
+页面的开始	<html >
+页面头部开始	<head>
+		<meta charset="utf-8" /> charset="utf-8"
+页面标题	<title>无标题文档</title>
+写样式		<style></style>
+页面头部结束	</head>
+页面主体开始	<body>
+页面主体结束	</body>
+页面的结束	</html>
+
+CSS—Cascading Style Sheet 层叠样式表 控制网页样式并允许将样式信息与网页内容分离的一种标记性语言
+
+样式表在页面上出现的位置：
+1. 行间样式表：
+<div style="width:500px; height:200px; border:2px solid red; background:yellow;">div</div>
+
+2. 内部样式表：
+<style>
+#div1 {
+	width:100px;
+	height:100px;
+	border:2px solid red;
+}
+</style>
+<div id="div1"></div>
+
+3. 外部样式表：所有正式的项目，都要用外部样式表 *
+<link href="1.css" rel="stylesheet" />
+
+——————————————————————
+
+常用的样式：
+width:100px; 宽
+height:100px; 高
+border:1px solid red; 边框： 1px 实线 红色；
+
+solid    实线
+dashed   虚线
+dotted   点划线
+
+red /yellow /blue /green /gray...
+
+#ff0000(红色)
+
+rgb(60,94,220)
+
+方向：顺时针 top right bottom left 
+
+背景：
+background-color:yellow;
+background:url(images/1.gif) 0 0 no-repeat;
+background:yellow url(images/1.gif) 0 0 no-repeat;
+
+背景颜色
+背景图片路径
+是否重复：repeat-x repeat-y no-repeat;
+背景定位：x			y
+	  10px			20px
+	  left center right	top center bottom
+	  20%			30%
+
+内边距padding
+外边距margin
+margin-top:10px;
+margin-right:10px;
+margin-bottom:10px;
+margin-left:10px;
+
+padding-top:10px;
+padding-right:10px;
+padding-bottom:10px;
+padding-left:10px;
+
+padding:10px;
+
+盒模型的尺寸计算（标准下）：width+padding(左右)+border(左右)
+
+margin叠加现象：margin-top
+1. 并列的时候，margin-bottom  margin-top 会发生叠加现象
+2. 嵌套的时候，给子级元素设置 margin-toa叠加现象
+
+----------------------------------------------------------------------------
+
+排版：
+text-indent:2em;	首行文本缩进
+font-size:20px;	字体大小
+font-family:"宋体";	字体样式（中：宋体，英：）
+font-weight:bold;	字体加粗bold、字体正常normal
+color:#CC6600;	字体颜色
+
+text-align: center;	水平对齐方式
+vertical-algin:middle;  垂直对齐方式
+
+line-height:30px;	高是多少，行高也设置多少，就能让文字垂直对齐
+letter-spacing:30px;	文字间距
+word-spacing:30px;	词语间距（依据空格做为分隔标准）
+
+
+千万不要让浏览器帮你设置样式（任何样式）
+
+----------------------------------------------------------------------------
+
+嵌套：
+<div>
+	<div></div>
+</div>
+
+并列：
+<div></div>
+<div></div>
+
+
+__________________________________________________________________________
+
+
+
+
+	
+ 

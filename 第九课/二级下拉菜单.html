@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body,ul,h2,h3{margin:0;padding:0;}
+li{ list-style:none;}
+.menu{width:360px;height:30px;padding:5px 10px;background:#999;border:1px solid #333;margin:20px auto;}
+.menu li{width:120px;float:left;height:30px;}
+.menu h2{height:29px;padding-top:1px;font-size:14px; text-align:center; line-height:28px;color:#333;}
+.menu1,.menu2{display:none;}
+.menu .active{ position:relative;}
+.menu .active h2{border:1px solid #555;border-bottom:none;padding:0;background:#ddd;color:#555; position:relative;z-index:2;}
+.menu .active .menu1{ display:block; position:absolute;left:0;top:29px;border:1px solid #555;background:#ddd;width:160px;padding:5px 1px;}
+.menu1 li{height:26px;border-bottom:1px solid #aaa;width:160px;}
+.menu1 h3{padding:2px;padding-right:0;font-size:12px; text-indent:10px;line-height:22px;color:#333;}
+.menu1 .active h3{padding:0;border:2px solid #777;border-right:none;width:130px;background:#fefefe; position:relative;z-index:2;color:#454545;}
+.menu1 .active .menu2{ display:block; position:absolute;width:140px; top:0;left:130px;border:2px solid #777;background:#fefefe;padding:10px;}
+.menu2 li{width:140px; height:20px;line-height:20px;font-size:12px;color:#333; text-indent:15px;color:#454545;}
+</style>
+<script>
+window.onload=function()
+{
+	var oMenu=document.getElementById("menu");
+	var aLi=oMenu.getElementsByTagName("li");
+	for(var i=0;i<aLi.length;i++)
+	{
+		aLi[i].onmouseover=function()
+		{
+			this.className="active";
+		};
+		aLi[i].onmouseout=function()
+		{
+			this.className="";
+		};
+	}
+};
+</script>
+</head>
+<body>
+<ul class="menu" id="menu">
+	<li  class="active">
+    	<h2>妙味课堂1</h2>
+        <ul class="menu1">
+        	<li class="active">
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<h2>妙味课堂</h2>
+        <ul class="menu1">
+        	<li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<h2>妙味课堂</h2>
+        <ul class="menu1">
+        	<li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+            <li>
+            	<h3>子菜单</h3>
+                <ul class="menu2">
+                	<li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                    <li>二级子菜单</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+body{font-size:12px; font-family:"宋体";}
+div,span{width:100px;height:100px;background:red; color:#fff;}
+.div1{display:inline;}
+.div2{ display:block;}
+/*
+	块
+	1.独占一行
+	2.支持所有样式
+	3.不设置宽的时候宽度撑满整行
+	内嵌
+	1.可并列在一行
+	2.不支持宽高，对上下的margin和padding支持的也有问题
+	3.代码换行会产生一个空格 (通过设置 字体和文字大小 来控制空格大小)
+	4.宽度有内容来撑开
+	
+	display:inline; 转换成内嵌
+	display:block; 转换成块
+*/
+</style>
+</head>
+<body>
+<div class="div1">块</div>
+<div>块</div>
+<span class="div2">内嵌</span>
+<span>内嵌</span>
+</body>
+</html>

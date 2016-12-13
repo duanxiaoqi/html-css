@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p,
+        img {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box {
+            width: 378px;
+            height: 83px;
+            border-top: 1px solid #d4d0c8;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            border-left: 1px solid #d4d0c8;
+        }
+
+        #grey {
+            width: 376px;
+            height: 81px;
+            background-color: #d4d0c8;
+            text-align: center;
+            border-top: 1px solid #fff;
+            border-right: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+            border-left: 1px solid #fff;
+        }
+
+        #content {
+            width: 288px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        /*文字右浮动,图片左浮动*/
+        /*文字不可absolute  会脱离文档流,然后超出*/
+
+        p {
+            float: right;
+            width: 240px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: left;
+
+        }
+
+        #logo {
+            float: left;
+
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="grey">
+        <img src="images/1.png" alt="">
+        <div id="content" class="clearfix">
+            <img src="images/2.png" alt="" id="logo">
+            <p>要在关闭之前存储对Adobe Photoshop 文档"未标题-1"的更改吗?</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

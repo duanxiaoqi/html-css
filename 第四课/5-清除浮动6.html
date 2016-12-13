@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+.box{margin:30px auto;border:10px solid #000;width:400px; overflow:hidden; position:relative;}
+.div{width:300px;height:300px;background:Red; float:left;}
+.ico{width:100px;height:100px;position:absolute;background:blue; left:-50px;top:0;}
+/*
+	浮动元素的父级有宽度的时候 IE6,7下是不用清浮动的
+	
+	清除浮动
+	
+	1.给浮动元素的父级也加浮动
+	
+	2.给浮动元素父级加display：inline-block
+	
+	3.在浮动元素下边加<div class="clearFloat"></div> 
+	.clearFloat{height:0;clear:both;font-size:0;}
+	在下面加上空的div用clear:both;把父级高度拉下来；
+	解决IE6最小高度问题：font-size:0;
+	*此方法会在IE6下产生2px的空白高度差问题
+	
+	4.在浮动元素下边加<br clear="all"/>
+	*此方法违反了“行为、样式、结构分离”的原则。
+	
+	5.给浮动元素的父级加class="clear"
+	.clear{zoom:1;}   
+	.clear:after{content:"";display:block;clear:both;}
+	（zoom拉伸倍数，用来解决IE6不支持after问题；Chrome对zoom的支持不好，Firefox不支持zoom；）
+    *最常用的清浮动方法！
+	
+	6.给浮动元素的父级加overflow
+
+*/
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="div"></div>
+    <span class="ico"></span>
+</div>
+</body>
+</html>

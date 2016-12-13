@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,dl,dt,dd,ul,li {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .box {
+            padding: 8px;
+            width: 310px;
+            border: 1px solid pink;
+        }
+
+        .title {
+            width: 272px;
+            height: 28px;
+            background: url("./images/dot3.png") no-repeat 12px 7px,url("./images/bg3.png") no-repeat 0 0;
+            padding-left: 38px;
+            line-height: 28px;
+        }
+
+        .content {
+            padding-top: 14px;
+        }
+
+        .content .img {
+            float: left;
+            display: block;
+            width: 116px;
+            height: 125px;
+            padding: 2px;
+            border: 1px solid #c8c4d3;
+        }
+
+        .content dl {
+            float: left;
+            width: 170px;
+            padding-left: 12px;
+            font-size: 11px;
+        }
+        .content dt a{
+            line-height: 25px;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .content dd,
+        .detail{
+            line-height: 20px;
+            color: #666666;
+
+        }
+
+        .content dd a {
+            color: #333333;
+        }
+
+        ul {
+            font-size: 11px;
+            line-height: 22px;
+            padding-top: 15px;
+        }
+
+        li {
+            padding-left: 28px;
+            padding-right: 28px;
+            background: url("./images/dot5.png") 14px 9px no-repeat;
+        }
+
+        .left {
+            float: left;
+            color: #333333;
+        }
+
+        .right {
+            float: right;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title">明星荐片</div>
+        <div class="content clearfix">
+            <a href="#" class="img"><img src="./images/ad4.png" alt=""></a>
+            <dl>
+                <dt><a href="#">周秀娜荐片:让子弹飞</a></dt>
+                <dd>导演:<a href="#">姜文</a> </dd>
+                <dd>主演:<a href="#">姜文</a>
+                    <a href="#">周润发</a>
+                    <a href="#">葛优</a>
+                </dd>
+                <dd>点评:我最近最喜欢的要算《让子弹飞》了,超喜欢……<a href="#" class="detail">[详情]</a> </dd>
+            </dl>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+                <a href="#" class="right">周秀娜</a>
+            </li>
+            <li>
+                <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+                <a href="#" class="right">周秀娜</a>
+            </li>
+            <li>
+            <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+            <a href="#" class="right">周秀娜</a>
+        </li>
+            <li>
+                <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+                <a href="#" class="right">周秀娜</a>
+            </li>
+            <li>
+                <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+                <a href="#" class="right">周秀娜</a>
+            </li>
+            <li>
+                <a href="#" class="left">《让子弹飞》:姜文是我的偶像</a>
+                <a href="#" class="right">周秀娜</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

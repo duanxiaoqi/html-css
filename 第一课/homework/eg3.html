@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*ul清浮动*/
+        /*li只浮动*/
+        /*里边a标签  block  设置内边距*/
+
+        ul,
+        li,
+        a{
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        #box {
+            padding: 13px 42px 13px 46px;
+            width: 510px;
+            border: 1px solid #000;
+        }
+
+        li{
+            list-style: none;
+            float: left;
+            border-right: 1px solid #000;
+            line-height: 12px;
+        }
+
+        .no_line {
+            border-right: none;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: #000;
+            font-size: 12px;
+            line-height: 12px;
+            display: block;
+            padding: 0 43px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul class="clearfix">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">服务</a></li>
+        <li class="no_line"><a href="#">联系方式</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

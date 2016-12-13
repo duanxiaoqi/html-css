@@ -1,0 +1,21 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>5-margin叠加现象（1）</title>
+<style>
+#div1{width:200px;height:170px;background-color:yellow; padding-top: 30px;}
+#div2{width:100px;height:100px;background-color:red;}
+</style>
+</head>
+
+<body>
+<div id="div1">
+	<div id="div2"></div>
+</div>
+<!--
+	当父子级关系两个元素，子元素的margin-top值，浏览器会默认赋给父元素.
+    解决办法：把子元素的margin-top值改成父元素padding-top,同时要把父元素高度减小。
+ -->
+</body>
+</html>
